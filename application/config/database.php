@@ -72,15 +72,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
+//5432
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
-	'dbdriver' => 'mysqli',
+	'hostname' => 'pgsql:host=localhost;port=5432;dbname=sppd',
+	'username' => 'postgres',
+	'password' => 'root',
+	'database' => 'sppd',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
+	'port'   => 5432, 
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
