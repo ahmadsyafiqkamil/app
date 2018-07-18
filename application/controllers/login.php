@@ -22,10 +22,16 @@ class Login extends CI_Controller {
   {
     parent::__construct();
     $this->load->model('client_model');
+
   }
   public function index()
   {
-    $this->load->view('login');
+    if($this->session->userdata('status') != "login"){
+			$this->load->view('login');
+		}else {
+      $this->loadContent('client/dashboard','');
+    }
+
 
   }
   public function login(){
@@ -48,9 +54,8 @@ class Login extends CI_Controller {
   			redirect(base_url("index.php/admin"));
 
   		}else{
-  			echo "Username dan password salah !";
-        echo "username : ".$username;
-        echo "password : ".$password;
+
+        redirect(base_url("index.php/login"));
   		}
   	}
 
@@ -59,8 +64,10 @@ class Login extends CI_Controller {
   		redirect(base_url('login'));
   	}
 
-  public function coba()
-  {
-    $this->load->view('coba');
-  }
+    public function loadContent($view,$data)
+    {
+      $this->load->view('layout/header');
+      $this->load->view($view,$data);
+      $this->load->view('layout/footer');
+    }
 }

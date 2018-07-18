@@ -2,7 +2,7 @@
 <!-- Main navbar -->
 <div class="navbar navbar-inverse bg-indigo">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+		<a class="navbar-brand" href="index.html"><img src="<?php echo base_url() ?>assets/images/logo_light.png" alt=""></a>
 
 		<ul class="nav navbar-nav visible-xs-block">
 			<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -98,17 +98,17 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown language-switch">
 				<a class="dropdown-toggle" data-toggle="dropdown">
-					<img src="assets/images/flags/gb.png" class="position-left" alt="">
+					<img src="<?php echo base_url() ?>assets/images/flags/gb.png" class="position-left" alt="">
 					English
 					<span class="caret"></span>
 				</a>
 
 				<ul class="dropdown-menu">
-					<li><a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a></li>
-					<li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
-					<li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
-					<li><a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a></li>
-					<li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+					<li><a class="deutsch"><img src="<?php echo base_url() ?>assets/images/flags/de.png" alt=""> Deutsch</a></li>
+					<li><a class="ukrainian"><img src="<?php echo base_url() ?>assets/images/flags/ua.png" alt=""> Українська</a></li>
+					<li><a class="english"><img src="<?php echo base_url() ?>assets/images/flags/gb.png" alt=""> English</a></li>
+					<li><a class="espana"><img src="<?php echo base_url() ?>assets/images/flags/es.png" alt=""> España</a></li>
+					<li><a class="russian"><img src="<?php echo base_url() ?>assets/images/flags/ru.png" alt=""> Русский</a></li>
 				</ul>
 			</li>
 
@@ -130,7 +130,7 @@
 					<ul class="media-list dropdown-content-body">
 						<li class="media">
 							<div class="media-left">
-								<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+								<img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
 								<span class="badge bg-danger-400 media-badge">5</span>
 							</div>
 
@@ -146,7 +146,7 @@
 
 						<li class="media">
 							<div class="media-left">
-								<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+								<img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
 								<span class="badge bg-danger-400 media-badge">4</span>
 							</div>
 
@@ -161,7 +161,7 @@
 						</li>
 
 						<li class="media">
-							<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+							<div class="media-left"><img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 							<div class="media-body">
 								<a href="#" class="media-heading">
 									<span class="text-semibold">Jeremy Victorino</span>
@@ -173,7 +173,7 @@
 						</li>
 
 						<li class="media">
-							<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+							<div class="media-left"><img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 							<div class="media-body">
 								<a href="#" class="media-heading">
 									<span class="text-semibold">Beatrix Diaz</span>
@@ -185,7 +185,7 @@
 						</li>
 
 						<li class="media">
-							<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+							<div class="media-left"><img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
 							<div class="media-body">
 								<a href="#" class="media-heading">
 									<span class="text-semibold">Richard Vango</span>
@@ -205,8 +205,9 @@
 
 			<li class="dropdown dropdown-user">
 				<a class="dropdown-toggle" data-toggle="dropdown">
-					<img src="assets/images/placeholder.jpg" alt="">
-					<span>Victoria</span>
+					<img src="<?php echo base_url() ?>assets/images/placeholder.jpg" alt="">
+					<span><?php echo $this->session->userdata("nama");?></span>
+					
 					<i class="caret"></i>
 				</a>
 
@@ -255,7 +256,7 @@
 
 	<div class="page-header-content">
 		<div class="page-title">
-			<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard <small>Hello, Victoria!</small></h4>
+			<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard <small>Hello, <?php echo $this->session->userdata("nama"); ?>!</small></h4>
 		</div>
 
 		<div class="heading-elements">
@@ -285,8 +286,8 @@
 					<div class="sidebar-user-material">
 						<div class="category-content">
 							<div class="sidebar-user-material-content">
-								<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-responsive" alt=""></a>
-								<h6>Victoria Baker</h6>
+								<a href="#"><img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-responsive" alt=""></a>
+								<h6><?php echo $this->session->userdata("nama"); ?></h6>
 								<span class="text-size-small">Santa Ana, CA</span>
 							</div>
 
