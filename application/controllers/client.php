@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Client extends CI_Controller {
 
   /**
   * Index Page for this controller.
@@ -55,13 +55,13 @@ class Login extends CI_Controller {
 
   		}else{
 
-        redirect(base_url("index.php/login"));
+        redirect(base_url());
   		}
   	}
 
   	public function logout(){
   		$this->session->sess_destroy();
-  		redirect(base_url('login'));
+  		redirect(base_url());
   	}
 
     public function loadContent($view,$data)

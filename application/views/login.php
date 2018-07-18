@@ -81,7 +81,7 @@
 			<div class="content-wrapper">
 
 				<!-- Advanced login -->
-				<form action="<?php echo base_url('index.php/login/login'); ?>" method="post">
+				<form action="<?php echo base_url('index.php/client/login') ?>" method="post">
 					<div class="panel panel-body login-form">
 						<div class="text-center">
 							<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
