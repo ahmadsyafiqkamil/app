@@ -81,7 +81,7 @@ $db['default'] = array(
 	'database' => 'sppd',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
-	'port'   => 5432, 
+	'port'   => 5432,
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

@@ -3,7 +3,7 @@
   <div class="sidebar-user-material">
     <div class="category-content">
       <div class="sidebar-user-material-content">
-        <a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-responsive" alt=""></a>
+        <a href="#"><img src="<?php echo base_url() ?>assets/images/placeholder.jpg" class="img-circle img-responsive" alt=""></a>
         <h6>Victoria Baker</h6>
         <span class="text-size-small">Santa Ana, CA</span>
       </div>

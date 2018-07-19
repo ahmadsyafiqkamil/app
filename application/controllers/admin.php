@@ -8,12 +8,15 @@ class Admin extends CI_Controller
   function __construct()
   {
     parent::__construct();
-    if($this->session->userdata('status') != "login"){
-			redirect(base_url("login"));
-		}
+
   }
   function index(){
-		$this->loadContent('layout/content','');
+    if($this->session->userdata('status') != "login"){
+			$this->load->view('login');
+		}else {
+      $this->loadContent('client/dashboard','');
+    }
+
 	}
 
   public function loadContent($view,$data)
