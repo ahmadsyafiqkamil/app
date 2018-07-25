@@ -22,6 +22,7 @@ class Client extends CI_Controller {
   {
     parent::__construct();
     $this->load->model('client_model');
+    
 
   }
   public function index()
@@ -31,8 +32,6 @@ class Client extends CI_Controller {
 		}else {
       $this->loadContent('client/dashboard','');
     }
-
-
   }
   public function login(){
   		$username = $this->input->post('username');
@@ -63,11 +62,14 @@ class Client extends CI_Controller {
   		$this->session->sess_destroy();
   		redirect(base_url());
   	}
+    public function register(){
 
+    }
     public function loadContent($view,$data)
     {
       $this->load->view('layout/header');
       $this->load->view($view,$data);
       $this->load->view('layout/footer');
     }
+
 }

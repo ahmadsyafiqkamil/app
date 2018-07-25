@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<title>E-SPPD</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -38,14 +38,14 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse bg-indigo">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+			<a class="navbar-brand" href="index.html">E-SPPD</a>
 
 			<ul class="nav navbar-nav pull-right visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
 			</ul>
 		</div>
 
-		<div class="navbar-collapse collapse" id="navbar-mobile">
+		<!-- <div class="navbar-collapse collapse" id="navbar-mobile">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
 					<a href="#">
@@ -66,7 +66,7 @@
 					</a>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 	</div>
 	<!-- /main navbar -->
 
@@ -81,7 +81,7 @@
 			<div class="content-wrapper">
 
 				<!-- Advanced login -->
-				<form action="<?php echo base_url('index.php/client/login'); ?>" method="post">
+				<form action="<?php echo site_url('client/login'); ?>" method="post">
 					<div class="panel panel-body login-form">
 						<div class="text-center">
 							<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
@@ -121,17 +121,17 @@
 							<button type="submit" class="btn bg-blue btn-block">Login <i class="icon-arrow-right14 position-right"></i></button>
 						</div>
 
-						<div class="content-divider text-muted form-group"><span>or sign in with</span></div>
+						<!-- <div class="content-divider text-muted form-group"><span>or sign in with</span></div>
 						<ul class="list-inline form-group list-inline-condensed text-center">
 							<li><a href="#" class="btn border-indigo text-indigo btn-flat btn-icon btn-rounded"><i class="icon-facebook"></i></a></li>
 							<li><a href="#" class="btn border-pink-300 text-pink-300 btn-flat btn-icon btn-rounded"><i class="icon-dribbble3"></i></a></li>
 							<li><a href="#" class="btn border-slate-600 text-slate-600 btn-flat btn-icon btn-rounded"><i class="icon-github"></i></a></li>
 							<li><a href="#" class="btn border-info text-info btn-flat btn-icon btn-rounded"><i class="icon-twitter"></i></a></li>
-						</ul>
+						</ul> -->
 
 						<div class="content-divider text-muted form-group"><span>Don't have an account?</span></div>
 						<a href="login_registration.html" class="btn btn-default btn-block content-group">Sign up</a>
-						<span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
+						<!-- <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span> -->
 					</div>
 				</form>
 				<!-- /advanced login -->
@@ -154,15 +154,15 @@
 
 		<div class="navbar-collapse collapse" id="footer">
 			<div class="navbar-text">
-				&copy; 2015. <a href="#" class="navbar-link">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" class="navbar-link" target="_blank">Eugene Kopyov</a>
+				&copy; <?php echo date("Y"); ?>. By PT.TaTI
 			</div>
 
 			<div class="navbar-right">
-				<ul class="nav navbar-nav">
+				<!-- <ul class="nav navbar-nav">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Terms</a></li>
 					<li><a href="#">Contact</a></li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</div>
