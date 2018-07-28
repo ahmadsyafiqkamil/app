@@ -75,10 +75,10 @@ $query_builder = TRUE;
 //5432
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'pgsql:host=localhost;port=5432;dbname=sppd',
+	'hostname' => 'pgsql:host=36.89.39.207;port=5153;dbname=esppd',
 	'username' => 'postgres',
-	'password' => 'root',
-	'database' => 'sppd',
+	'password' => 'integrasiM4diun',
+	'database' => 'esppd',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'port'   => 5432,
