@@ -1,8 +1,9 @@
 
+<body class="navbar-bottom">
 <!-- Main navbar -->
 <div class="navbar navbar-inverse bg-indigo">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html"><img src="<?php echo base_url() ?>assets/images/logo_light.png" alt=""></a>
+		<a class="navbar-brand" href="index.html">E-SPPD</a>
 
 		<ul class="nav navbar-nav visible-xs-block">
 			<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -330,7 +331,9 @@
 		<!-- Main content -->
 		<div class="content-wrapper">
 
-			<?php $content ?>
+      <div class="col-md-9">
+        adsda
+      </div>
 		</div>
 		<!-- /main content -->
 

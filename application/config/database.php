@@ -73,15 +73,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 //5432
+// $db['default'] = array(
+// 	'dsn'	=> '',
+// 	'hostname' => 'pgsql:host=36.89.39.207;port=5153;dbname=esppd',
+// 	'username' => 'postgres',
+// 	'password' => 'integrasiM4diun',
+// 	'database' => '',
+// 	'dbdriver' => 'pdo',
+// 	'dbprefix' => '',
+// 	'port'   => '',
+// 	'pconnect' => FALSE,
+// 	'db_debug' => (ENVIRONMENT !== 'production'),
+// 	'cache_on' => FALSE,
+// 	'cachedir' => '',
+// 	'char_set' => 'utf8',
+// 	'dbcollat' => 'utf8_general_ci',
+// 	'swap_pre' => '',
+// 	'encrypt' => FALSE,
+// 	'compress' => FALSE,
+// 	'stricton' => FALSE,
+// 	'failover' => array(),
+// 	'save_queries' => TRUE
+// );
 $db['default'] = array(
 	'dsn'	=> '',
+	//'hostname' => 'pgsql:host=localhost;port=5432;dbname=esppd',
 	'hostname' => 'pgsql:host=36.89.39.207;port=5153;dbname=esppd',
 	'username' => 'postgres',
+	// 'password' => 'root',
 	'password' => 'integrasiM4diun',
-	'database' => 'esppd',
+	'database' => '',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
-	'port'   => 5432,
+	'port'   => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

@@ -6,15 +6,15 @@
 
   <div class="navbar-collapse collapse" id="footer">
     <div class="navbar-text">
-      &copy; 2015. <a href="#" class="navbar-link">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" class="navbar-link" target="_blank">Eugene Kopyov</a>
+      &copy; <?php echo date("Y"); ?>. By PT.TaTI
     </div>
 
     <div class="navbar-right">
-      <ul class="nav navbar-nav">
+      <!-- <ul class="nav navbar-nav">
         <li><a href="#">About</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Contact</a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

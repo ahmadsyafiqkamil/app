@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>E-SPPD</title>
 
-	<!-- Global stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url() ?>assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url() ?>assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url() ?>assets/css/core.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url() ?>assets/css/components.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url() ?>assets/css/colors.css" rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
-
-	<!-- Core JS files -->
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/plugins/loaders/blockui.min.js"></script>
-	<!-- /core JS files -->
-
-	<!-- Theme JS files -->
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/plugins/forms/styling/uniform.min.js"></script>
-
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/core/app.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/pages/login.js"></script>
-
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/plugins/ui/ripple.min.js"></script>
-	<!-- /theme JS files -->
-
-</head>
 
 <body class="navbar-bottom login-container">
 
@@ -130,7 +97,7 @@
 						</ul> -->
 
 						<div class="content-divider text-muted form-group"><span>Don't have an account?</span></div>
-						<a href="login_registration.html" class="btn btn-default btn-block content-group">Sign up</a>
+						<a href="<?php echo base_url('index.php/client/register'); ?>" class="btn btn-default btn-block content-group">Sign up</a>
 						<!-- <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span> -->
 					</div>
 				</form>
@@ -144,29 +111,3 @@
 
 	</div>
 	<!-- /page container -->
-
-
-	<!-- Footer -->
-	<div class="navbar navbar-default navbar-fixed-bottom footer">
-		<ul class="nav navbar-nav visible-xs-block">
-			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
-		</ul>
-
-		<div class="navbar-collapse collapse" id="footer">
-			<div class="navbar-text">
-				&copy; <?php echo date("Y"); ?>. By PT.TaTI
-			</div>
-
-			<div class="navbar-right">
-				<!-- <ul class="nav navbar-nav">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Terms</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul> -->
-			</div>
-		</div>
-	</div>
-	<!-- /footer -->
-
-</body>
-</html>
