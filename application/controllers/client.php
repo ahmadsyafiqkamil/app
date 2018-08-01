@@ -75,10 +75,7 @@ class Client extends CI_Controller {
       <script type="text/javascript" src="<?php echo base_url() ?>assets/js/plugins/ui/ripple.min.js"></script>';
       $msg = 'username dan password salah '.$username.' '.$password;
       $articles = 'hahahaha';
-      $this->loadContent('login',array(
-        "msg" => $msg,
-        "articles" => $articles),
-        $header);
+      $this->loadContent('login',$msg,$header);
       }
     }
 
@@ -90,7 +87,7 @@ class Client extends CI_Controller {
       $this->loadContent('register','','');
     }
 
-    public function loadContent($view,$dataa= array( ),$header)
+    public function loadContent($view,$dataa,$header)
     {
       $data['header']=$header;
       $data['data']=$dataa;

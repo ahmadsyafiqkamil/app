@@ -1,5 +1,5 @@
 
-
+<?php echo $msg; ?>
 <body class="navbar-bottom login-container">
 
 	<!-- Main navbar -->

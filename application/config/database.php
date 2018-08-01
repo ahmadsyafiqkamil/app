@@ -97,11 +97,11 @@ $query_builder = TRUE;
 // );
 $db['default'] = array(
 	'dsn'	=> '',
-	//'hostname' => 'pgsql:host=localhost;port=5432;dbname=esppd',
-	'hostname' => 'pgsql:host=36.89.39.207;port=5153;dbname=esppd',
+	'hostname' => 'pgsql:host=localhost;port=5432;dbname=esppd',
+	// 'hostname' => 'pgsql:host=36.89.39.207;port=5153;dbname=esppd',
 	'username' => 'postgres',
-	// 'password' => 'root',
-	'password' => 'integrasiM4diun',
+	'password' => 'root',
+	//'password' => 'integrasiM4diun',
 	'database' => '',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
